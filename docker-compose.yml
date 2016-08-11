@@ -8,8 +8,8 @@ web:
    - mysql
 mysql:
   image: percona:latest
-  ports:
-   - "3306:3306"
+  expose:
+   - "3306"
   volumes:
    - ./ssl:/etc/ssl/mysql
    - ./data:/var/lib/mysql
