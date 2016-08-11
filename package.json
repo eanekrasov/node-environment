@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eanekrasov/node-environment/issues"
   },
-  "homepage": "https://github.com/eanekrasov/node-environment#readme"
+  "homepage": "https://github.com/eanekrasov/node-environment#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
