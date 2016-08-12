@@ -21,4 +21,4 @@ ENV NODE_ENV production
 
 ADD nodehosting.json /etc/
 
-CMD [ "bash", "-l", "-c", "node /usr/local/lib/node_modules/node-deploy-server/bin/node-deploy-server"
+CMD [ "/usr/local/bin/node-deploy-server" ]
