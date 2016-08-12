@@ -19,11 +19,12 @@ RUN npm install -g bower && \
 ENV NODE_ENV production
 
 RUN mkdir /app
-WORKDIR /app
 
-ADD package.json /app/package.json
+COPY . /app/
 
 RUN cd /app && npm install
+
+WORKDIR /app
 
 EXPOSE 9999
 

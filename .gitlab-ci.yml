@@ -1,0 +1,12 @@
+before_script:
+test:
+  script:
+   - npm install
+   - bash -l -c "npm test"
+production:
+  type: deploy
+  script:
+   - npm install node-deploy-client
+   - node node_modules/node-deploy-client/bin/deploy production
+  only:
+   - master

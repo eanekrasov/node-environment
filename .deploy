@@ -1,0 +1,5 @@
+{
+    "production" : {
+        "url" : "http://<user>:<password>@<host>:15478"
+    }
+}

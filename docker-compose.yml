@@ -1,17 +1,4 @@
 web:
   build: .
-  volumes:
-   - .:/app
   ports:
    - "9999:9999"
-  links:
-   - mysql
-mysql:
-  image: percona:latest
-  expose:
-   - "3306"
-  volumes:
-   - ./ssl:/etc/ssl/mysql
-   - ./data:/var/lib/mysql
-  environment:
-    MYSQL_ROOT_PASSWORD: "w@5YG3V6Fw3bbaW"
