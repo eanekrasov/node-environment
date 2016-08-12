@@ -1,0 +1,9 @@
+web:
+  build: .
+  ports:
+   - "15478:15478"
+  expose:
+   - "9999"
+  environment:
+    VIRTUAL_HOST: o4fun.ru
+    VIRTUAL_PORT: "9999"

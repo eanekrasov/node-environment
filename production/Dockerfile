@@ -8,24 +8,17 @@ MAINTAINER coder <coder@1dea.ru>
 #	curl -L https://get.rvm.io | bash -s stable --ruby --gems=compass && \
 #	/bin/bash -l -c "rvm use"
 
-# bower, grunt
+# bower, grunt, etc.
 RUN npm install -g bower && \
     npm install -g grunt-cli && \
     npm install -g mocha && \
+    npm install -g node-deploy-server --unsafe-perm && \
     npm cache clear
 
 # /DEPENDENCIES
 
 ENV NODE_ENV production
 
-RUN mkdir /app
+ADD nodehosting.json /etc/
 
-COPY . /app/
-
-RUN cd /app && npm install
-
-WORKDIR /app
-
-EXPOSE 9999
-
-CMD ["npm", "start"]
+CMD [ "bash", "-l", "-c", "node /usr/local/lib/node_modules/node-deploy-server/bin/node-deploy-server"

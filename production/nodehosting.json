@@ -1,0 +1,21 @@
+{
+    "port": 15478,
+    "username": "<user>",
+    "password": "<password>",
+    "autoCreateApplication": true,
+    "defaultApplicationPath": "../",
+    "applications": {
+        "app": {
+            "path": "../",
+            "foreverConfig": {
+                "logFile": "/var/log/app.log",
+                "outFile": "/var/log/app.stdout.log",
+                "errFile": "/var/log/app.stderr.log",
+                "pidFile": "/var/run/app.pid",
+                "command": "npm",
+                "args": [ "start", "--verbose"]
+            },
+            "startProcess": true
+        }
+    }
+}
