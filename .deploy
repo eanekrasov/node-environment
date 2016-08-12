@@ -1,5 +1,5 @@
 {
     "production" : {
-        "url" : "http://<user>:<password>@<host>:15478"
+        "url" : "http://admin:password@o4fun.ru:15478"
     }
 }

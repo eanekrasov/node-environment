@@ -1,7 +1,7 @@
 {
     "port": 15478,
-    "username": "<user>",
-    "password": "<password>",
+    "username": "admin",
+    "password": "password",
     "autoCreateApplication": true,
     "defaultApplicationPath": "../",
     "applications": {

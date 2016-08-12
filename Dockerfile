@@ -26,6 +26,6 @@ RUN cd /app && npm install
 
 WORKDIR /app
 
-EXPOSE 9999
+EXPOSE 80
 
 CMD ["npm", "start"]
